@@ -1,4 +1,4 @@
-var data = [
+export var secteur17 = [
 {
       "type": "Feature",
       "properties": {"secteur" : "17","habitations":""},
@@ -90,10 +90,7 @@ var data = [
             [
               -1.792392,
               48.153253
-            ],
-            
-            
-            
+            ]
           ]
         ]
       }

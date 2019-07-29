@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<script type="module" src="js/hbts.js"></script>
 		<style>
 			html, body {margin:0px}
 			@import url('https://fonts.googleapis.com/css?family=Sniglet&display=swap');
@@ -11,6 +12,8 @@
 			nav #txt {height :120px;text-align:center;}
 			nav #txt h1, nav txt h2	{padding: 0px 2px}
 			.blanc {height:0px}
+			table {border-collapse: collapse;}
+			table th, table td {padding : 3px;border : 1px solid black;}
 		</style>
 		<script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
 	</head>
@@ -24,26 +27,56 @@
 			<img class="blanc" src="https://pbs.twimg.com/profile_images/864118206981697537/otnoi9uG.jpg"/>
 		</nav>
 		<table>
-			<tr>
-				<th></th>
-				<td><a href="map.html?1" target="blank">Secteur 1</a></td>
-			</tr>
-			
-			<tr><td><a href="map.html?ville" target="blank">Toute la ville</a></td></tr>
-			<tr><td><a href="map.html?campagne" target="blank">Toute la campagne</a></td></tr>
+			<tr><th><a href="map.html?ville"  target="blank">Toute la ville</a></th><td id="hbtsville"> habitations</td></tr>
+			<tr><th><a href="map.html?campagne"  target="blank">Toute la campagne</a></th><td id="hbtscampagne"> habitations</td></tr>
 		</table>
 
 		</body>
+
 		<script>
-		var num = "10";
-		
-		import k from 'js/10.js'; // notez que nous avons la liberté d'utiliser import m au lieu de import k, parce que k était l'export par défaut
-		console.log (k); // enregistrera 12
+		var i = 32
+			while (i > 0) {
+				num = i;
+				i = i -1;
+				document.getElementsByTagName("TBODY")[0].insertAdjacentHTML("afterbegin",'<tr><th><a href="map.html?'+num+'" target="blank">Secteur '+num+'</a></th><td id=hbts'+ num +'> habitations</td></tr>');
+			}
+		</script>
+		<script type="module">
+		import {secteur1,secteur2,secteur3,secteur4,secteur5,secteur6,secteur7,secteur8,secteur9,secteur10,secteur11,secteur12,secteur13,secteur14,secteur15,secteur16,secteur17,secteur18,secteur19,secteur20,secteur21,secteur22,secteur23,secteur24,secteur25,secteur26,secteur27,secteur28,secteur29,secteur30,secteur31,secteur32,ville,campagne} from "./js/hbts.js"; 
 
-
-
-		document.write('<tr><th></th><td><a href="map.html?'+num+'" target="blank">Secteur '+num+'</a></td><td>'+ htts +' habitations</td></tr>')
-		
-		
+		document.getElementById("hbts1").innerText = secteur1 + "  habitations"
+		document.getElementById("hbts2").innerText = secteur2 + "  habitations"
+		document.getElementById("hbts3").innerText = secteur3 + "  habitations"
+		document.getElementById("hbts4").innerText = secteur4 + "  habitations"
+		document.getElementById("hbts5").innerText = secteur5 + "  habitations"
+		document.getElementById("hbts6").innerText = secteur6 + "  habitations"
+		document.getElementById("hbts7").innerText = secteur7 + "  habitations"
+		document.getElementById("hbts8").innerText = secteur8 + "  habitations"
+		document.getElementById("hbts9").innerText = secteur9 + "  habitations"
+		document.getElementById("hbts10").innerText = secteur10 + "  habitations"
+		document.getElementById("hbts11").innerText = secteur11 + "  habitations"
+		document.getElementById("hbts12").innerText = secteur12 + "  habitations"
+		document.getElementById("hbts13").innerText = secteur13 + "  habitations"
+		document.getElementById("hbts14").innerText = secteur14 + "  habitations"
+		document.getElementById("hbts15").innerText = secteur15 + "  habitations"
+		document.getElementById("hbts16").innerText = secteur16 + "  habitations"
+		document.getElementById("hbts17").innerText = secteur17 + "  habitations"
+		document.getElementById("hbts18").innerText = secteur18 + "  habitations"
+		document.getElementById("hbts19").innerText = secteur19 + "  habitations"
+		document.getElementById("hbts20").innerText = secteur20 + "  habitations"
+		document.getElementById("hbts21").innerText = secteur21 + "  habitations"
+		document.getElementById("hbts22").innerText = secteur22 + "  habitations"
+		document.getElementById("hbts23").innerText = secteur23 + "  habitations"
+		document.getElementById("hbts24").innerText = secteur24 + "  habitations"
+		document.getElementById("hbts25").innerText = secteur25 + "  habitations"
+		document.getElementById("hbts26").innerText = secteur26 + "  habitations"
+		document.getElementById("hbts27").innerText = secteur27 + "  habitations"
+		document.getElementById("hbts28").innerText = secteur28 + "  habitations"
+		document.getElementById("hbts29").innerText = secteur29 + "  habitations"
+		document.getElementById("hbts30").innerText = secteur30 + "  habitations"
+		document.getElementById("hbts31").innerText = secteur31 + "  habitations"
+		document.getElementById("hbts32").innerText = secteur32 + "  habitations"
+		document.getElementById("hbtsville").innerText = ville + "  habitations"
+		document.getElementById("hbtscampagne").innerText = campagne + "  habitations"
 		</script>
 </html>

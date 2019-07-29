@@ -1,4 +1,4 @@
-var data = [
+export var secteur23 = [
     {
       "type": "Feature",
       "properties": {"secteur" : "23","habitations":""},
