@@ -6,14 +6,6 @@ export var secteur1 = [
         "type": "Polygon",
         "coordinates": [
           [			
-			export var secteur1 = [
-{
-      "type": "Feature",
-      "properties": {"secteur" : "1","habitations":""},
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [			
 			[
             -1.824479,
 			48.168006
@@ -68,9 +60,4 @@ export var secteur1 = [
         ]
       }
     }
-];
-          ]
-        ]
-      }
-    }
-];
+]
