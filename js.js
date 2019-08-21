@@ -1,5 +1,5 @@
 
-		var mymap = L.map('mapid').setView([48.152, -1.77], 15);
+		var mymap = L.map('mapid').setView([48.152, -1.77], 17);
 	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiYXF1YWJ4IiwiYSI6ImNqeWszMHQzeTA5aGwzaHBtaWR2bWZpd2oifQ.ik62iG1BWqL7xrdVJb2eBA', {
 		minZoom: 15,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
