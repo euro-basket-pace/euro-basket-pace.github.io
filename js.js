@@ -137,7 +137,7 @@ L.control.watermark({ position: 'topleft' }).addTo(mymap);
 	}}}).addTo(mymap);
 	
 	
-map.on('click', 
+mymap.on('click', 
 	function(e){
 	var coord = e.latlng.toString().split(',');
 	var lat = coord[0].split('(');
