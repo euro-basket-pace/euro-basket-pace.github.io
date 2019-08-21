@@ -142,5 +142,5 @@ mymap.on('click',
 	var coord = e.latlng.toString().split(',');
 	var lat = coord[0].split('(');
 	var lng = coord[1].split(')');
-	console.log(lat[0] + "," + lng[1]);
+	console.log(lat[1] + "," + lng[0]);
 });
