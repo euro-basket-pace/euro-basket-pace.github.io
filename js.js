@@ -135,3 +135,9 @@ L.control.watermark({ position: 'topleft' }).addTo(mymap);
 		opacity: 0.6,
 		weight: 6,
 	}}}).addTo(mymap);
+	
+	
+marker.on('click', function(ev){
+  var latlng = map.mouseEventToLatLng(ev.originalEvent);
+  alert(latlng.lat + ', ' + latlng.lng);
+});
