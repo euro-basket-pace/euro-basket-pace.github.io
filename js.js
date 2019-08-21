@@ -137,7 +137,10 @@ L.control.watermark({ position: 'topleft' }).addTo(mymap);
 	}}}).addTo(mymap);
 	
 	
-marker.on('click', function(ev){
-  var latlng = map.mouseEventToLatLng(ev.originalEvent);
-  alert(latlng.lat + ', ' + latlng.lng);
+map.on('click', 
+	function(e){
+	var coord = e.latlng.toString().split(',');
+	var lat = coord[0].split('(');
+	var lng = coord[1].split(')');
+	console.log("point 1 : " + lat[0] + "," + lng[1]);
 });
