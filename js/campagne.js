@@ -1,4 +1,4 @@
-export var ville = [
+export var campagne = [
     {
       "type": "Feature",
       "properties": {"secteur" : "32","habitations":""},
