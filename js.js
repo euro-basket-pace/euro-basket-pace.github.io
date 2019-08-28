@@ -60,7 +60,6 @@ L.control.watermark({ position: 'topleft' }).addTo(mymap);
 	import {secteur2} from "./js/2.js"
 	import {secteur3} from "./js/3.js"
 	import {secteur4} from "./js/4.js"
-	import {secteur5} from "./js/5.js"
 	import {secteur6} from "./js/6.js"
 	import {secteur7} from "./js/7.js"
 	import {secteur8} from "./js/8.js"
