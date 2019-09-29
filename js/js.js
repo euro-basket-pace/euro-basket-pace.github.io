@@ -59,17 +59,9 @@ var info = L.control();
 var geojson;
 
 
-var printProvider = L.print.provider({
-   method: 'GET',
-   url: ' http://path/to/mapfish/print',
-   autoLoad: true,
-   dpi: 90
-});
+L.control.browserPrint({
 
-var printControl = L.control.print({
-   provider: printProvider
-});        
-map.addControl(printControl);
+}).addTo(map)
 
 // ----------------------------------------------------------------------------------
 
