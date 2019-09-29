@@ -1,3 +1,5 @@
+import {habitantscampagne} from "./hbts.js";
+
 export var campagne = [
 {
       "type": "Feature",

@@ -1,3 +1,7 @@
+import {habitants14} from "./hbts.js";
+
+
+
 export var secteur14 = [
 	{
       "type": "Feature",
@@ -8,10 +12,7 @@ export var secteur14 = [
         "type": "Polygon",
         "coordinates": [
           [
-            [
-              -1.77767,
-              48.15346
-            ],
+            [-1.77767, 48.15346],
             [
               -1.777531,
               48.153242
@@ -39,8 +40,7 @@ export var secteur14 = [
             [
               -1.77132,
               48.155873
-            ],
-            
+            ],       
 			
 			
 			

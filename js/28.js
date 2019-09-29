@@ -1,3 +1,5 @@
+import {habitants28} from "./hbts.js";
+
 export var secteur28 = [
 	{
       "type": "Feature",

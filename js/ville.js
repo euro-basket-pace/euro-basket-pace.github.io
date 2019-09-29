@@ -1,3 +1,5 @@
+import {habitantsville} from "./hbts.js";
+
 export var ville = [
     {
       "type": "Feature",
