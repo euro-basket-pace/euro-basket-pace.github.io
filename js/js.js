@@ -1,7 +1,7 @@
-import {secteur1,secteur2,secteur3,secteur4,secteur6,secteur7,secteur8,secteur9,secteur10,secteur11,secteur12,secteur13,secteur14,secteur15,secteur16,secteur17,secteur18,secteur19,secteur20,secteur21,secteur22,secteur23,secteur24,secteur25,secteur26,secteur27,secteur28,secteur29,secteur30,secteur31,secteur32} from "./js/secteurs.js"
-import {ville} from "./js/ville.js"
-import {campagne} from "./js/campagne.js"	
-import {habitants1,habitants2,habitants3,habitants4,habitants5,habitants6,habitants7,habitants8,habitants9,habitants10,habitants11,habitants12,habitants13,habitants14,habitants15,habitants16,habitants17,habitants18,habitants19,habitants20,habitants21,habitants22,habitants23,habitants24,habitants25,habitants26,habitants27,habitants28,habitants29,habitants30,habitants31,habitants32,habitantsville,habitantscampagne,habitantstotal} from "./js/hbts.js";
+import {secteur1,secteur2,secteur3,secteur4,secteur6,secteur7,secteur8,secteur9,secteur10,secteur11,secteur12,secteur13,secteur14,secteur15,secteur16,secteur17,secteur18,secteur19,secteur20,secteur21,secteur22,secteur23,secteur24,secteur25,secteur26,secteur27,secteur28,secteur29,secteur30,secteur31,secteur32} from "./secteurs.js"
+import {ville} from "./ville.js"
+import {campagne} from "./campagne.js"	
+import {habitants1,habitants2,habitants3,habitants4,habitants5,habitants6,habitants7,habitants8,habitants9,habitants10,habitants11,habitants12,habitants13,habitants14,habitants15,habitants16,habitants17,habitants18,habitants19,habitants20,habitants21,habitants22,habitants23,habitants24,habitants25,habitants26,habitants27,habitants28,habitants29,habitants30,habitants31,habitants32,habitantsville,habitantscampagne,habitantstotal} from "./hbts.js";
 
 // ----------------------------------------------------------------------------------	
 
