@@ -58,11 +58,6 @@ var info = L.control();
 	
 var geojson;
 
-
-L.control.browserPrint({
-
-}).addTo(map)
-
 // ----------------------------------------------------------------------------------
 
 info.onAdd = function (mymap) {
@@ -79,7 +74,7 @@ info.addTo(mymap);
 
 // ----------------------------------------------------------------------------------
 	
-L.Control.Watermark = L.Control.extend({
+/*L.Control.Watermark = L.Control.extend({
 	onAdd: function(mymap) {
 		var img = L.DomUtil.create('img');
 		img.onclick = function(){printPage();return false;};
@@ -96,7 +91,7 @@ L.control.watermark = function(opts) {
     return new L.Control.Watermark(opts);
 }
 
-L.control.watermark({ position: 'topleft' }).addTo(mymap);
+L.control.watermark({ position: 'topleft' }).addTo(mymap);*/
 
 // ----------------------------------------------------------------------------------	
 

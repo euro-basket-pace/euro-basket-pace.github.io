@@ -1,62 +1,21 @@
 <!DOCTYPE html>
 <head>
-	<script src="https://igor-vladyka.github.io/leaflet.browser.print/dist/leaflet.browser.print.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
 	<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+	<script type="module" src="js/js.js"></script>
+	<script src="https://igor-vladyka.github.io/leaflet.browser.print/dist/leaflet.browser.print.js"></script>
 	<link rel="stylesheet" href="css/css.css"/>
+	
 <script>var query = location.search.slice(1);</script>
 </head>
 <body>
 	<div id="mapid">
 	</div>
-<script language="javascript">
-function printPage() {
-  var content = document.getElementById("mapid").innerHTML;
-  var css = "", i, j, c = document.getElementById("mapid").cloneNode(true);
-  for (i = 0; i < c.childNodes.length; i++) {
-    if (c.childNodes[i].nodeType == 1 && (c.childNodes[i].getAttribute("id") == "mainLeaderboard" || c.childNodes[i].getAttribute("id") == "midcontentadcontainer")) {
-      c.removeChild(c.childNodes[i]);
-      content = c.innerHTML;
-    }
-  }
-  var head = document.getElementsByTagName("head")[0].innerHTML;
-  var myWindow = window.document.write("<body onload='window.print()'</body><head>"+head+"</head><button onclick='window.print()'>a</button>"+content+"</body>");
-  window.print();
-location.reload();
-}
+<script>
+L.control.browserPrint({
 
-////////////////////////////////////////////////////
-
-$(".drag").draggable();
-$(".drag").droppable();
-var takeScreenShot = function() {
-    html2canvas(document.getElementsByClassName("leaflet-zoom-animated"), {
-        onrendered: function (canvas) {
-            var tempcanvas=document.createElement('canvas');
-            tempcanvas.width=1920;
-            tempcanvas.height=1080;
-            var context=tempcanvas.getContext('2d');
-            context.drawImage(canvas,112,0,288,200,0,0,1920,1080);
-            var link=document.createElement("a");
-            link.href=tempcanvas.toDataURL('image/jpg');   //function blocks CORS
-            link.download = 'screenshot.jpg';
-            link.click();
-        }
-		
-		
-		
-		html2canvas(document.querySelector("html")).then(canvas => {
-			document.body.appendChild(canvas)
-		});
-		
-		
-    });
-}
-</script>
-</script>
-<script type="module" src="js/js.js">
-</script>
+}).addTo(map)</script>
 </body>
