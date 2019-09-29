@@ -36,7 +36,7 @@ L.Control.Watermark = L.Control.extend({
    onRemove: function(mymap) {
        // Nothing to do here
    }
-);
+});
 
 
 .control.watermark = function(opts) {
