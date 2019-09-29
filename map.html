@@ -44,6 +44,14 @@ var takeScreenShot = function() {
             link.download = 'screenshot.jpg';
             link.click();
         }
+		
+		
+		
+		html2canvas(document.querySelector("html")).then(canvas => {
+			document.body.appendChild(canvas)
+		});
+		
+		
     });
 }
 </script>
