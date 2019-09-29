@@ -1,7 +1,7 @@
 export var secteur18 = [
 {
       "type": "Feature",
-      "properties": {"secteur" : "18","habitations":""},
+      "properties": {"secteur" : "18","habitations":habitants18},
       "geometry": {
         "type": "Polygon",
         "coordinates": [
