@@ -41,7 +41,7 @@ L.Control.Watermark = L.Control.extend({
 
 .control.watermark = function(opts) {
    return new L.Control.Watermark(opts);
-
+};
 
 .control.watermark({ position: 'topleft' }).addTo(mymap);
 
@@ -93,7 +93,7 @@ import {secteur32} from "./js/32.js"
 import {ville} from "./js/ville.js"
 import {campagne} from "./js/campagne.js"	
 
-import {habitants1,habitants2,habitants3,habitants4,habitants5,habitants6,habitants7,habitants8,habitants9,habitants10,habitants11,habitants12,habitants13,habitants14,habitants15,habitants16,habitants17,habitants18,habitants19,habitants20,habitants21,habitants22,habitants23,habitants24,habitants25,habitants26,habitants27,habitants28,habitants29,habitants30,habitants31,habitants32,habitantsville,habitantscampagne} from "./js/hbts.js";
+import {habitants1,habitants2,habitants3,habitants4,habitants5,habitants6,habitants7,habitants8,habitants9,habitants10,habitants11,habitants12,habitants13,habitants14,habitants15,habitants16,habitants17,habitants18,habitants19,habitants20,habitants21,habitants22,habitants23,habitants24,habitants25,habitants26,habitants27,habitants28,habitants29,habitants30,habitants31,habitants32,habitantsville,habitantscampagne} from "./js/hbts.js"
 
 
 if(query == "1"){var data = secteur1}
