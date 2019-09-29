@@ -1,7 +1,7 @@
 export var campagne = [
 {
       "type": "Feature",
-      "properties": {"secteur" : "4","habitations":""},
+      "properties": {"secteur" : "4","habitations":campagne},
       "geometry": {
         "type": "Polygon",
         "coordinates": [
