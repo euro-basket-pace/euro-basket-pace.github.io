@@ -1,4 +1,4 @@
-import {habitants1} from "hbts.js";
+import {habitants1} from "./hbts.js";
 
 export var secteur1 = [
 {
