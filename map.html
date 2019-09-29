@@ -32,7 +32,7 @@ location.reload();
 $(".drag").draggable();
 $(".drag").droppable();
 var takeScreenShot = function() {
-    html2canvas(document.getElementById("mapid"), {
+    html2canvas(document.getElementsByClassName("leaflet-zoom-animated"), {
         onrendered: function (canvas) {
             var tempcanvas=document.createElement('canvas');
             tempcanvas.width=1920;
