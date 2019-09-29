@@ -125,7 +125,7 @@ L.control.watermark({ position: 'topleft' }).addTo(mymap);
 	else if (query == "32"){var data = secteur32}
 	else if (query == "ville"){var data = ville}
 	else if (query == "campagne"){var data = campagne}
-	else if (query == "test"){var data = secteur31 + secteur32}
+	else if (query == "test"){var data = secteur31 + ',' +  secteur32}
 	
 	geojson = L.geoJson(data, {
 		onEachFeature: onEachFeature,
