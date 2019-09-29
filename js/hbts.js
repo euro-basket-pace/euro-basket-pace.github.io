@@ -31,6 +31,8 @@ var habitants30 = 0;
 var habitants31 = 0;
 var habitants32 = 0;
 var habitantsville = habitants10 + habitants11 + habitants12 + habitants13 + habitants14 + habitants15 + habitants16 + habitants17 + habitants18 + habitants19 + habitants20 + habitants21 + habitants22 + habitants23 + habitants24 + habitants25 + habitants26 + habitants27 + habitants28 + habitants29 + habitants30 + habitants31 + habitants32;
-var habitantscampagne = habitants1 + habitants2 + habitants3 + habitants4 + habitants5 + habitants6 + habitants7 + habitants8 + habitants9 + habitantsville;
+var habitantscampagne = habitants1 + habitants2 + habitants3 + habitants4 + habitants5 + habitants6 + habitants7 + habitants8 + habitants9;
+var habitantstotal = habitantscampagne + habitantsville
 
-export {habitants1,habitants2,habitants3,habitants4,habitants5,habitants6,habitants7,habitants8,habitants9,habitants10,habitants11,habitants12,habitants13,habitants14,habitants15,habitants16,habitants17,habitants18,habitants19,habitants20,habitants21,habitants22,habitants23,habitants24,habitants25,habitants26,habitants27,habitants28,habitants29,habitants30,habitants31,habitants32,habitantsville,habitantscampagne}
+
+export {habitants1,habitants2,habitants3,habitants4,habitants5,habitants6,habitants7,habitants8,habitants9,habitants10,habitants11,habitants12,habitants13,habitants14,habitants15,habitants16,habitants17,habitants18,habitants19,habitants20,habitants21,habitants22,habitants23,habitants24,habitants25,habitants26,habitants27,habitants28,habitants29,habitants30,habitants31,habitants32,habitantsville,habitantscampagne,habitantstotal}
