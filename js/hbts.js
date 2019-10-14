@@ -1,4 +1,4 @@
-var habitants1 = 70;
+var habitants1 = 75;
 var habitants2 = 100;
 var habitants3 = 75;
 var habitants4 = 85;
