@@ -1,4 +1,5 @@
 var habitants = [
+/* habitants secteur 0*/ 0,
 /* habitants secteur 1*/ 75,
 /* habitants secteur 2*/ 105,
 /* habitants secteur 3*/ 120,
@@ -33,19 +34,20 @@ var habitants = [
 /* habitants secteur 32*/ 175,
 ];
 
-var habitantscampagne = "";
-var habitantsville = "";
+var habitantscampagne = 0;
+var habitantsville = 0;
+var habitantstot = 0;
 
-for (var i = 9; i < habitants.length; i++) {
-    habitantsville += (habitants[i]);
-};
-
-for (var i = 0; i < 9; i++) {
+for (var i = 10; i < habitants.length; i++) {
     habitantscampagne += (habitants[i]);
 };
 
-habitants.push(habitantscampagne);
-habitants.push(habitantsville);
-habitants.push(habitantsville + habitantscampagne);
+for (var i = 0; i < 10; i++) {
+    habitantsville += (habitants[i]);
+};
+
+habitantstot = habitantsville + habitantscampagne
+
+habitants.push(habitantscampagne,habitantsville,habitantstot);
 
 export var habitants ;
