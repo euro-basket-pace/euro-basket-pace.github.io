@@ -196,6 +196,20 @@ export var secteur4 = [
 }
 ];
 
+export var secteur5 = [
+{
+      "type": "Feature",
+      "properties": {"secteur" : "6","habitations":habitants6},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+        [	
+			
+		]
+	]
+	}
+}
+
 export var secteur6 = [
 {
       "type": "Feature",
