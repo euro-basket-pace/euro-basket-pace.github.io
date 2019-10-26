@@ -1,9 +1,9 @@
-import {habitantscampagne} from "./hbts.js";
+import {habitants} from "./hbts.js";
 
 export var campagne = [
 {
       "type": "Feature",
-      "properties": {"secteur" : "4","habitations":habitantscampagne},
+      "properties": {"secteur" : "4","habitations":habitants[33]},
       "geometry": {
         "type": "Polygon",
         "coordinates": [
