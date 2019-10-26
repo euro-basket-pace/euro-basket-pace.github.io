@@ -35,7 +35,7 @@ export var habitants = [
 
 var habitantstotal = "";
 
-for(x in hbts) {
+for(x in habitants) {
     habitantstotal += x
 };
 
