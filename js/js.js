@@ -39,7 +39,7 @@ else if (query == "31"){var data = secteur31}
 else if (query == "32"){var data = secteur32}
 else if (query == "ville"){var data = ville}
 else if (query == "campagne"){var data = campagne}
-else if (query == "test"){var data = secteur1.push(secteur2,secteur3,secteur4,secteur5,secteur6,secteur7,secteur8,secteur9,secteur10,secteur11,secteur12,secteur13,secteur14,secteur15,secteur16,secteur17,secteur18,secteur19,secteur20,secteur21,secteur22,secteur23,secteur24,secteur25,secteur26,secteur27,secteur28,secteur29,secteur30,secteur31,secteur32);alert(data)}
+else if (query == "test"){var data = ville[0] + ville[1]}
 
 // ----------------------------------------------------------------------------------
 
@@ -85,7 +85,9 @@ function onEachFeature(feature, layer) {
 }
 
 // ----------------------------------------------------------------------------------
-	
+i=0
+
+while (i < nb) {
 geojson = L.geoJson(data, {
 	onEachFeature: onEachFeature,
 	style: function (feature) {
@@ -94,6 +96,9 @@ geojson = L.geoJson(data, {
 	opacity: 0.6,
 	weight: 6,
 }}}).addTo(mymap);
+i+=1;
+}
+
 	
 // ----------------------------------------------------------------------------------
 
