@@ -85,9 +85,7 @@ function onEachFeature(feature, layer) {
 }
 
 // ----------------------------------------------------------------------------------
-i=0
 
-while (i < nb) {
 geojson = L.geoJson(data, {
 	onEachFeature: onEachFeature,
 	style: function (feature) {
@@ -96,8 +94,7 @@ geojson = L.geoJson(data, {
 	opacity: 0.6,
 	weight: 6,
 }}}).addTo(mymap);
-i+=1;
-}
+
 
 	
 // ----------------------------------------------------------------------------------
