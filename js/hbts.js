@@ -48,6 +48,6 @@ for (var i = 0; i < 10; i++) {
 
 habitantstot = habitantsville + habitantscampagne
 
-habitants.push(habitantscampagne,habitantsville,habitantstot);
+habitants.push(habitantscampagne, habitantsville, habitantstot);
 
-export var habitants ;
+export var habitants;
