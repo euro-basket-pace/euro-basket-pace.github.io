@@ -1,37 +1,44 @@
-var habitants1 = 75;
-var habitants2 = 105;
-var habitants3 = 120;
-var habitants4 = 80;
-var habitants5 = 0;
-var habitants6 = 80;
-var habitants7 = 70;
-var habitants8 = 40;
-var habitants9 = 75;
-var habitants10 = 265;
-var habitants11 = 200;
-var habitants12 = 170;
-var habitants13 = 150;
-var habitants14 = 200;
-var habitants15 = 110;
-var habitants16 = 110;
-var habitants17 = 220;
-var habitants18 = 180;
-var habitants19 = 120;
-var habitants20 = 100;
-var habitants21 = 200;
-var habitants22 = 175;
-var habitants23 = 120;
-var habitants24 = 180;
-var habitants25 = 100;
-var habitants26 = 100;
-var habitants27 = 225;
-var habitants28 = 225;
-var habitants29 = 225;
-var habitants30 = 225;
-var habitants31 = 175;
-var habitants32 = 175;
-var habitantsville = habitants10 + habitants11 + habitants12 + habitants13 + habitants14 + habitants15 + habitants16 + habitants17 + habitants18 + habitants19 + habitants20 + habitants21 + habitants22 + habitants23 + habitants24 + habitants25 + habitants26 + habitants27 + habitants28 + habitants29 + habitants30 + habitants31 + habitants32;
-var habitantscampagne = habitants1 + habitants2 + habitants3 + habitants4 + habitants5 + habitants6 + habitants7 + habitants8 + habitants9;
-var habitantstotal = habitantscampagne + habitantsville
+export var habitants = [
+/* habitants secteur 1*/ 75,
+/* habitants secteur 2*/ 105,
+/* habitants secteur 3*/ 120,
+/* habitants secteur 4*/ 80,
+/* habitants secteur 5*/ 0,
+/* habitants secteur 6*/ 80,
+/* habitants secteur 7*/ 70,
+/* habitants secteur 8*/ 40,
+/* habitants secteur 9*/ 75,
+/* habitants secteur 10*/ 265,
+/* habitants secteur 11*/ 200,
+/* habitants secteur 12*/ 170,
+/* habitants secteur 13*/ 150,
+/* habitants secteur 14*/ 200,
+/* habitants secteur 15*/ 110,
+/* habitants secteur 16*/ 110,
+/* habitants secteur 17*/ 220,
+/* habitants secteur 18*/ 180,
+/* habitants secteur 19*/ 120,
+/* habitants secteur 20*/ 100,
+/* habitants secteur 21*/ 200,
+/* habitants secteur 22*/ 175,
+/* habitants secteur 23*/ 120,
+/* habitants secteur 24*/ 180,
+/* habitants secteur 25*/ 100,
+/* habitants secteur 26*/ 100,
+/* habitants secteur 27*/ 225,
+/* habitants secteur 28*/ 225,
+/* habitants secteur 29*/ 225,
+/* habitants secteur 30*/ 225,
+/* habitants secteur 31*/ 175,
+/* habitants secteur 32*/ 175,
+];
 
-export {habitants1,habitants2,habitants3,habitants4,habitants5,habitants6,habitants7,habitants8,habitants9,habitants10,habitants11,habitants12,habitants13,habitants14,habitants15,habitants16,habitants17,habitants18,habitants19,habitants20,habitants21,habitants22,habitants23,habitants24,habitants25,habitants26,habitants27,habitants28,habitants29,habitants30,habitants31,habitants32,habitantsville,habitantscampagne,habitantstotal}
+var habitantstotal = "";
+
+for(x in hbts) {
+    habitantstotal += x
+};
+
+export var habitantsville = habitantstotal - hbts[0] - hbts[1] - hbts[2] - hbts[3] - hbts[4] - hbts[5] - hbts[6] - hbts[7] - hbts[8];
+
+export var habitantstotal ;
