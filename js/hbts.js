@@ -1,4 +1,4 @@
-export var habitants = [
+var habitants = [
 /* habitants secteur 1*/ 75,
 /* habitants secteur 2*/ 105,
 /* habitants secteur 3*/ 120,
@@ -33,12 +33,19 @@ export var habitants = [
 /* habitants secteur 32*/ 175,
 ];
 
-var habitantstotal = "";
+var habitantscampagne = "";
+var habitantsville = "";
 
-for(x in habitants) {
-    habitantstotal += x
+for (var i = 9; i < habitants.length; i++) {
+    habitantsville += (habitants[i]);
 };
 
-export var habitantsville = habitantstotal - hbts[0] - hbts[1] - hbts[2] - hbts[3] - hbts[4] - hbts[5] - hbts[6] - hbts[7] - hbts[8];
+for (var i = 0; i < 9; i++) {
+    habitantscampagne += (habitants[i]);
+};
 
-export var habitantstotal ;
+habitants.push(habitantscampagne);
+habitants.push(habitantsville);
+habitants.push(habitantsville + habitantscampagne);
+
+export var habitants ;
