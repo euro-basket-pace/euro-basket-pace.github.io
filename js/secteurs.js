@@ -209,6 +209,7 @@ export var secteur5 = [
 	]
 	}
 }
+];
 
 export var secteur6 = [
 {
