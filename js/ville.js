@@ -781,7 +781,7 @@ export var ville = [
   },
   {
     "type": "Feature",
-    "properties": { "secteur": "21", "habitations": habitations[21] },
+    "properties": { "secteur": "21", "habitations": habitants[21] },
     "geometry": {
       "type": "Polygon",
       "coordinates": [
