@@ -1,6 +1,6 @@
 import { habitants } from "./hbts.js";
 
-export var ville = [
+export var tot = [
   {
     "type": "Feature",
     "properties": { "secteur": "1", "habitations": habitants[1] },
