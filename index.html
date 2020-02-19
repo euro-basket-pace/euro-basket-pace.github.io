@@ -68,6 +68,10 @@
 			padding: 3px;
 			border: 1px solid black;
 		}
+		.casesup {
+			width: 152px;
+			display:none;
+		}
 	</style>
 	<script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
 </head>
@@ -98,6 +102,7 @@
 			<td></td><td></td><td></td>
 		</tr>
 	</table>
+	<button onclick="casesup()">Cases</button>
 
 </body>
 
@@ -105,7 +110,7 @@
 <script type="module">
 	var i = 32
 	while (i > 0) {
-		document.getElementsByTagName("TBODY")[0].insertAdjacentHTML("afterbegin", '<tr><th><a href="map.html?' + i + '" target="blank">Secteur ' + i + '</a></th><td id=hbts' + i + '> habitations</td><td></td><td></td><td></td></tr>');
+		document.getElementsByTagName("TBODY")[0].insertAdjacentHTML("afterbegin", '<tr><th><a href="map.html?' + i + '" target="blank">Secteur ' + i + '</a></th><td id=hbts' + i + '> habitations</td><td class="casesup"></td><td class="casesup"></td><td class="casesup"></td></tr>');
 		i = i - 1;
 	}
 
@@ -147,6 +152,11 @@
 	document.getElementById("hbtscampagne").innerText = habitants[34] + "  habitations"
 	document.getElementById("hbtsville").innerText = habitants[33] + "  habitations"
 	document.getElementById("hbtstotal").innerText = habitants[35] + "  habitations"
+	
+	
+	fucntion casesup(){
+		document.getElementsByClassName("casesup").style.display = "block";
+	}
 </script>
 
 </html>
