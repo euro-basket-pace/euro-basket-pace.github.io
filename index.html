@@ -83,14 +83,17 @@
 		<tr>
 			<th><a href="map.html?campagne" target="blank">Toute la campagne</a></th>
 			<td id="hbtscampagne"> habitations</td>
+			<td></td><td></td><td></td>
 		</tr>
 		<tr>
 			<th><a href="map.html?ville" target="blank">Toute la ville</a></th>
 			<td id="hbtsville"> habitations</td>
+			<td></td><td></td><td></td>
 		</tr>
 		<tr>
 			<th><a href="map.html?tot" target="blank">Total</a></th>
 			<td id="hbtstotal"> habitations</td>
+			<td></td><td></td><td></td>
 		</tr>
 	</table>
 
@@ -100,7 +103,7 @@
 <script type="module">
 	var i = 32
 	while (i > 0) {
-		document.getElementsByTagName("TBODY")[0].insertAdjacentHTML("afterbegin", '<tr><th><a href="map.html?' + i + '" target="blank">Secteur ' + i + '</a></th><td id=hbts' + i + '> habitations</td></tr>');
+		document.getElementsByTagName("TBODY")[0].insertAdjacentHTML("afterbegin", '<tr><th><a href="map.html?' + i + '" target="blank">Secteur ' + i + '</a></th><td id=hbts' + i + '> habitations</td></tr><td></td><td></td><td></td>');
 		i = i - 1;
 	}
 
